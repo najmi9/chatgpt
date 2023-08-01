@@ -1,0 +1,32 @@
+  form {
+    text-align: center;
+    width: 80%; /* Adjust the width of the form */
+    max-width: 300px; /* Limit the form's maximum width */
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e74c3c; /* Red color for the submit button */
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #c0392b; /* Darker red color on hover */
+  }

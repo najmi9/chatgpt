@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ChapBot App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='css/app.css') }}" rel="stylesheet" />
+    {% block stylesheets %}{% endblock %}
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('chat') }}">Home</a></li>
+                <li><a href="{{ url_for('register') }}">Rgister</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                <li><a href="{{ url_for('logout') }}">Logout</a></li>
+                {% if current_user %}
+                    <li class="text-primary"> Hi {{ current_user.username }}</li>
+                {% endif %}
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block main %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2021 My Website</p>
+    </footer>
+
+    {% block javascript %}{% endblock %}
+</body>
+</html>

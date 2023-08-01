@@ -1,0 +1,135 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333333; /* Set the black background color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Make sure the body takes the full viewport height */
+  }
+
+  header {
+    background-color: #e74c3c; /* Red color for the header */
+    color: #ffffff;
+    padding: 10px;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+/* Main Styles for the Login Page */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px); /* Adjust the height to center the content (100px is the approximate header height) */
+    flex: 1;
+  }
+  h1 {
+    text-align: center;
+    color: #ffffff;
+  }
+  .container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    flex: 1; /* Use remaining space to push footer to the bottom */
+    display: flex;
+    flex-direction: column; /* Use flexbox to stack children vertically */
+  }
+
+  .card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+
+  .card-header {
+    background-color: #e74c3c; /* Red color for the card header */
+    color: #ffffff;
+    padding: 10px;
+  }
+
+  .card-body {
+    padding: 10px;
+  }
+
+  .chat-message {
+    margin: 10px 5px;
+  }
+
+  .message-text {
+    margin: 10px 20px;
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 70%;
+    word-wrap: break-word;
+  }
+
+  .bot {
+    background-color: #f0f0f0;
+    color: #333333;
+    float: left;
+  }
+
+  .user {
+    background-color: #d0cfcf;
+    color: #333333;
+    float: right;
+  }
+
+  .card-footer {
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin-top: auto; /* Push the footer to the bottom */
+  }
+
+  .input-group {
+    margin-bottom: 10px;
+  }
+
+  .form-control {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+  }
+
+  .btn-primary {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #e74c3c; /* Red color for the send button */
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .btn-primary:hover {
+    background-color: #c0392b; /* Darker red color on hover */
+  }
+
+  footer {
+    background-color: #e74c3c; /* Red color for the footer */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    flex-shrink: 0; /* Prevent footer from shrinking */
+  }
